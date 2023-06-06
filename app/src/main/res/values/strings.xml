@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">UserTest</string>
+    <string name="name">Nam Nam</string>
+    <string name="email">tructuanphu1@gmail.com</string>
+    <string name="address">Address</string>
+    <string name="street">Nam Dinh</string>
+    <string name="city">Ha Noi</string>
+    <string name="user_name">User Name\n</string>
+    <string name="lat">29.4572</string>
+    <string name="phone">Phone\n</string>
+    <string name="web">Website</string>
+    <string name="company">Company\n</string>
+    <string name="user">User</string>
+    <string name="geo">Geo</string>
+</resources>

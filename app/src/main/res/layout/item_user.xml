@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="16dp">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textColor="@color/red"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="12dp"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_name"
+        app:layout_constraintStart_toEndOf="@id/tv_name"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20sp"
+        android:layout_marginTop="17dp"
+        android:layout_marginStart="12dp"/>
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/email"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/yellow"/>
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_email"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/address"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        android:textColor="@color/blue"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/ln_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/tv_address"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="24dp">
+
+        <TextView
+            android:id="@+id/tv_street"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/street"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tv_suite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/street"
+            android:textSize="18sp"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/city"
+            android:textSize="18sp"
+            android:id="@+id/tv_city"/>
+
+        <TextView
+            android:id="@+id/tv_zipcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/street"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/geo"
+            android:textSize="18sp"
+            android:id="@+id/tv_geo"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ln_geo"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ln_address"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/tv_lat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lat"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_lng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lat"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ln_geo"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/web"
+        android:textSize="20sp"
+        android:textColor="@color/green"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:id="@+id/tv_website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_phone"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/web"
+        android:textSize="20sp"
+        android:textColor="@color/pink"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:id="@+id/tv_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tv_website"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/company"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/ln_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/tv_company"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="24dp">
+
+        <TextView
+            android:id="@+id/tv_company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/street"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tv_catchPhrase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/street"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/city"
+            android:textSize="18sp"
+            android:id="@+id/tv_bs"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
